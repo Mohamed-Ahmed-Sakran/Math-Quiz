@@ -22,7 +22,7 @@ var questTitle;
 var currentQuest = 0;
 var currentQuestContainer;
 
-var timeNum = 5
+var timeNum = 190
 var time = document.getElementById("timer");
 setInterval(counterTime,1000)
 function counterTime(){
