@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cssStyle/style.css" />
+    <title>Math Quez</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="timer-container"><h1 id="timer"></h1></div>
+        <div id="mark-quest"></div>
+        <div class="all-ans">
+            <h1 id="quest-title"></h1>
+            <div id="all-quest" class="quest"></div>
+        </div>
+        <br />
+        <div class="buttons">
+            <button class="previous-quest three-button" onclick="previous(event)">previous</button>
+            <button id="cuerrent-quest"></button>
+            <button class="next-quest three-button" onclick="next(event)">Next</button>
+            <button class="mark-quest three-button" onclick="mark(event)">Mark</button>
+        </div>
+    </div>
+
+    <script src="/JSFiles/question.js"></script>
+</body>
+
+</html>
