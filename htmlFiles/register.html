@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Examination System</title>
+    <link rel="stylesheet" href="/cssStyle/register.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 1 class = container for the form elements -->
+        <h1>Create Account</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <!-- 2  class - form-group first part (first name) -->
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <div class="error" id="firstNameError">First name must contain only alphabetical characters</div>
+                <!-- 3 class error has the result of the error of not entering the right data seperated by IDs -->
+            </div>
+            
+            <div class="form-group">
+                <!-- 4 -->
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <div class="error" id="lastNameError">Last name must contain only alphabetical characters</div>
+                <!-- 5 -->
+            </div>
+            
+            <div class="form-group">
+                <!-- 6 -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="emailError">Please enter a valid email address</div>
+                <!-- 7 -->
+            </div>
+            
+            <div class="form-group">
+                <!-- 8 -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error" id="passwordError">Password must be at least 8 characters long</div>
+                <!-- 9 -->
+            </div>
+            
+            <div class="form-group">
+                <!-- 10 -->
+                <label for="confirmPassword">Re-enter Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <div class="error" id="confirmPasswordError">Passwords do not match</div>
+                <!-- 11 -->
+            </div>
+            
+            <button type="submit">Register</button>
+        </form>
+        
+        <div class="login-link">
+            <!-- 12 -->
+            Already have an account? <a href="signin.html">Sign In</a>
+        </div>
+    </div>
+
+    <script src="/JSFiles/register.js"></script>
+</body>
+</html>
