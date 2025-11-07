@@ -22,7 +22,7 @@ var questTitle;
 var currentQuest = 0;
 var currentQuestContainer;
 
-var timeNum = 120
+var timeNum = 5
 var time = document.getElementById("timer");
 setInterval(counterTime,1000)
 function counterTime(){
@@ -137,7 +137,7 @@ function appearScore() {
       score++;
     }
   }
-  document.body.innerHTML = `<h1>You finished the exam ! ☺</h1><br><h1>Your score is : ${score}</h1>`;
+  document.body.innerHTML = `<div id="final-message"><h1>You finished the exam ! ☺</h1></div><br><div id="score"><h1>Your score is : ${score} / ${questions.length}</h1></div>`;
 }
 
 function checkNextQuest(currentQuest) {

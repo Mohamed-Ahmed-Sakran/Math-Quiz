@@ -134,3 +134,15 @@ input[type="radio"]:checked {
 position: relative;
 top: 13px;
 }
+
+#final-message{
+  width: 30%;
+  margin: auto;
+}
+
+#score{
+  width: 40%;
+  border: 5px solid green;
+  margin: auto;
+  text-align: center;
+}
